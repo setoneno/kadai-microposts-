@@ -10,6 +10,7 @@
         </div>
         <div>
           <p><%= micropost.content %></p>
+          <p><%= image_tag micropost.image %></p>
         </div>
         <div>
           <%= render "likes/like_button", micropost: micropost %>

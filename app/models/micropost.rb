@@ -1,4 +1,6 @@
 class Micropost < ApplicationRecord
+  mount_uploader :image, ImageUploader #image
+  
   belongs_to :user
   
   validates :user_id, presence: true
